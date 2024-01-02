@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/input.css">
+    <title>Desafio | Filter</title>
+  </head>
+  <body class="bg-zinc-900 text-white flex items-center justify-center w-screen h-screen">
+    <main class="w-3/4 container mx-auto my-auto flex gap-24 items-center justify-center p-5">
+      <div class="flex flex-col gap-8">
+        <div class="flex h-full gap-8 text-xl flex-col justify-between px-4 py-8 border-2 border-zinc-700 rounded-2xl text-white">
+          <div class="text-5xl text-center">
+            <i class="fa-brands fa-apple"></i>
+          </div>
+          <button class="flex gap-2 p-2 items-center justify-center hover:text-zinc-400 ease-in duration-150"><i class="fa-solid fa-book"></i> Todos</button>
+          <button class="flex gap-2 p-2 items-center justify-center hover:text-zinc-400 ease-in duration-150"><i class="fa-regular fa-newspaper"></i> Novos</button>
+          <button class="flex gap-2 p-2 items-center justify-center hover:text-zinc-400 ease-in duration-150"><i class="fa-solid fa-mobile-screen-button"></i> iPhone</button>
+          <button class="flex gap-2 p-2 items-center justify-center hover:text-zinc-400 ease-in duration-150"><i class="fa-solid fa-tablet-screen-button"></i> iPad</button>
+          <button id="mac" class="flex gap-2 p-2 items-center justify-center hover:text-zinc-400 ease-in duration-150"><i class="fa-solid fa-laptop"></i> Macbook</button>
+          <button class="flex gap-2 p-2 items-center justify-center hover:text-zinc-400 ease-in duration-150"><i class="fa-solid fa-headphones"></i> Airpods</button>
+        </div>
+      </div>
+      <div id="container" class="w-full h-[580px] p-2 overflow-y-scroll grid grid-cols-4 gap-4"></div>
+    </main>
+
+    <script src="./js/filterCard.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/createCard.js"></script>
+    <script src="https://kit.fontawesome.com/a76cf2ada8.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
